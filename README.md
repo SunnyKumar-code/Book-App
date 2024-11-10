@@ -4,7 +4,7 @@ This project is a Book Application that allows users to sign up, log in, and bro
 
 ## Live Demo
 
-You can access the live demo of the project [here](https://book-application-project.netlify.app/).
+You can access the live demo of the project [here](https://sunnykumar-code.github.io/Book-App/).
 
 ## Features
 
