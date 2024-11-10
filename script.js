@@ -24,6 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 let allCr = document.querySelector('#all-categories');
+let iconhome = document.querySelector('.icon');
+
+iconhome.addEventListener('click', () => {
+    fetchData(url);
+})
 
 allCr.addEventListener('click', () => {
     fetchData(url);
