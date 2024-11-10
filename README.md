@@ -13,6 +13,8 @@ You can access the live demo of the project [here](https://sunnykumar-code.githu
 - **Dark Mode Toggle:** Users can toggle between light and dark modes for better user experience.
 - **Quick View:** Users can hover over book images for a quick view, showing more details about the book, and click for more information.
 
+
+
 ## Technologies Used
 
 - **HTML**
