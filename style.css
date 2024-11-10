@@ -122,7 +122,13 @@ main {
 .all-books h2 {
     font-size: 1.5rem;
     color: #9c35e0;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover{
+        scale: 1.02;
+    }
 }
+
 
 .all-books::-webkit-scrollbar {
     width: 10px;

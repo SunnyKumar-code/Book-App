@@ -23,6 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+let allCr = document.querySelector('#all-categories');
+
+allCr.addEventListener('click', () => {
+    fetchData(url);
+})
+
+
 async function fetchData(url) {
     try {
         let response = await fetch(url);
@@ -65,6 +72,7 @@ function displayCategories(book) {
 }
 
 let showBookContainer = document.querySelector(".all-book");
+
 
 function showBooks(bookArray) {
     showBookContainer.innerHTML = "";
@@ -222,3 +230,5 @@ function showBooksCategories(bookArray) {
 
 fetchCategories(url2);
 fetchData(url);
+
+
