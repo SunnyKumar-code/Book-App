@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     let isLogin = false;
   
-    // Toggle between Sign Up and Login
+    
     toggleLink.addEventListener("click", () => {
       isLogin = !isLogin;
       formTitle.textContent = isLogin ? "Log In" : "Sign Up";
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       clearMessages();
     });
   
-    // Handle form submission
+    
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       clearMessages();
@@ -38,11 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   
-    // Sign Up function
+   
     function signUp(username, password) {
       if (!validateForm(username, password)) return;
   
-      // Check if user already exists
+      
       if (localStorage.getItem(username)) {
         usernameError.textContent = "Username already taken";
       } else {
@@ -52,15 +52,15 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   
-    // Login function
+   
     function login(username, password) {
         const storedUser = JSON.parse(localStorage.getItem(username));
         if (storedUser && storedUser.password === password) {
           successMsg.textContent = "Login successful!";
           setTimeout(() => {
             alert("Welcome " + username + "!");
-            localStorage.setItem("loggedInUser", username);  // Store username in localStorage
-            window.location.href = "Book-app.html";  // Redirect to the Book app page
+            localStorage.setItem("loggedInUser", username);  
+            window.location.href = "Book-app.html";  
             clearMessages();
           }, 500);
         } else {
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       
   
-    // Form validation
+    
     function validateForm(username, password) {
       let isValid = true;
   
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return isValid;
     }
   
-    // Clear error and success messages
+    
     function clearMessages() {
       usernameError.textContent = "";
       passwordError.textContent = "";
